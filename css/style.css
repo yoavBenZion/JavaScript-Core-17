@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+body {
+  margin: 0 auto;
+  max-width: 750px;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.conteiner {
+  margin: 0 5px;
+  width: 100%;
+/*  width: 500px;*/
+}
+
+h1, h2 {
+  text-align: center;
+  background-color: teal;
+}
+
+h3 {
+  background-color: lightgray;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 2px 2px;
+  
+}
+ol li {
+  list-style:upper-latin
+}
+
+p {
+  margin: 2px 2px;
+  
+}
+
+ul {
+  border-top: 1px dotted grey;
+  border-bottom: 1px dotted grey;
+}

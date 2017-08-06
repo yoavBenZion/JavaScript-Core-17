@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Core</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+   <div class="conteiner">
+    <header>
+      <h1>JavaScript Core</h1>
+      <p>JavaScript & the Core <a href="http://dmitrysoshnikov.com/ecmascript/javascript-the-core/" target="_blank">CORE</a> if you read this...72 virgins will ..</p>
+    </header>
+    <h3>THIS</h3>
+    <p><kbd>window</kbd> is the globol scope.
+    and <kbd>This</kbd>, usually refers to the global object - window. <br>
+    this === window <br>
+    this.window === window. <br>
+    </p>
+    <h4>4 cases when This dosn't work as defoult</h4>
+    <ol>
+      <li>Inside a method function, executed by the parent object.</li>
+      <li>Executed with call , apply or bound with bind</li>
+      <li>Inside a DOM node event handler</li>
+      <li>As part of a constructor function, using the new keyword</li>
+    </ol>
+    <p>If this is inside a function, and the function is calld, so this will be the function. <br>
+    Will refer to the calling object (left of the . ) <br>so it will activate the function and define the this in the functions <kbd>Runtime</kbd><br>
+    <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/this" target="_blank">this|mdn</a><br>
+    <li><a href="http://www.devtime.co.il/this-keyword/" target="_blank">THIS</a> wtf? a short explenation in hebrow.</li>
+    </p>
+    
+    <h3>If the function() has nothing that is on it's left - this is always defined by the window.</h3>
+    
+    <h1>SCOPE </h1>
+    <h3>function call() and apply()</h3>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" target="_blank">CALL||MDN</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank">APPLAY ||MDN</a></li>
+    </ul>
+    
+    <p>Call and apply determine what will be our this  in our function. call works with ',' . apply works with arrays<br>
+    they both run the function.</p>
+    
+    <h2>bind( )</h2>
+    <p>bind() terurns a new function, with 'this' that it's calld for. <br> 
+    It doe's not call the function.</p>
+    <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind" target="_blank">BIND||MDN</a>
+    <h2>Arguments</h2>
+    <ul>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+    </ul>
+    <h2>Constructor function( )</h2>
+    <p>use a capital letter, to show it's a constructor. <br>
+    it's a building plan.<br>
+    a constructor function, has a this for every paramater. in order to activate it. <br>
+    we use - the keyword <strong>NEW</strong> and we define the this in parentesis.()<br>
+    each new will get a new object, with all the parameters.</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor" target="_blank">Constructor||MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" target="_blank">NEW ||MDN</a></li>
+    </ul>
+    <h2>Prototype</h2>
+    <p>every function in JavaScript is actually an object. that has properties and methods.<br>
+    prototype is an object, that contains all the intiel values from it's intiel object.<br>
+    <strong> just like inheritance. </strong><br>
+    First comes the proto of the Object, then the function, and then anything else.</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype" target="_blank">prototype||MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance" target="_blank">inheritance in javascript ||MDN</a></li>
+        <li><img src="img/proto.PNG"></li>
+        <p>In reality, today there is a way to create a new object-<br>
+         and that's considerd the "Best Proctice".</p>
+    </ul>
+       <p>InstenceOf - tests if along the prototype chain, the prototype of the constructor.</p>
+       <img src="img/instece.PNG">
+       <p>The Secret   _proto_ is the refrence to an object internal prototype.<br>
+       </p>
+       <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/proto" target="_blank">PROTO || mdn</a>
+       <h2>Object.create()</h2>
+       <p>Creats a new object with the specified object and properties.<br>
+       server - object prototype - null.<br>
+       object.hasOwnProperty - checks if the object has certin property.</p>
+    <ul>
+        <li><a href="" target="_blank"></a></li>
+    </ul>
+        
+    <h2>Home Work</h2>
+    <ol>
+      <li><a href="https://codepen.io/netcraft/pen/wbcHJ?editors=0011" target="_blank">Exercize This in nested function</a></li>
+      <li><a href="https://codepen.io/nirgeier/pen/xGGPjP" target="_blank">Codpen - button</a></li>
+    </ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
